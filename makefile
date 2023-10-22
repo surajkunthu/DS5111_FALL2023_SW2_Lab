@@ -8,6 +8,9 @@ env:
 run:	
 	@. env/bin/activate; python3 bin/clockdemo_param.py
 
+lint:
+	@. env/bin/activate; pylint bin/perceptron.py
+
 .PHONY: tests
 tests:
 	. env/bin/activate; pytest -vv tests
